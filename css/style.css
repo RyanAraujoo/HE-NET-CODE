@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing:border-box;
+}
+body {
+    background: linear-gradient(#052C3A,#095573);
+    background-attachment: fixed;
+}
+article {
+    display: block;
+    margin: 125px auto;
+}
+section {
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    padding: 10px;
+    border: 2px solid #095573;
+    margin: 30px auto;
+    position: relative;
+}
+article > p {
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    width: 40%;
+    text-align: right;
+   position: absolute;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+section > div {
+    margin-left: 90px;
+}
+section div:first-child:before {
+    font-family: "Material Icons"; 
+    content: "signal_cellular_alt";
+    position: absolute;
+    font-size: 70px;
+    margin-left: -80px;
+    margin-top: -10px;
+}
+.green-content {
+    color: #2FD058;
+}
+.orange-content {
+    color: #FF8511;
+}
+.red-content  {
+   color: #FF2B2B;
+}
+section div > h3 {
+    color: #ffffff;
+}
+
+section div > p {
+    color: rgba(255, 255, 255, 0.5);
+    line-height:37px;
+}
+h4 {
+    text-align: center;
+}
+h4 span {
+  font-size: 25px;
+}
+@media (max-width:970px) {
+    section{
+        width: 70%;
+    }
+}
+@media (max-width:650px) {
+    section {
+        width: 80%;
+    }
+}
